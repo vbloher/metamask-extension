@@ -208,14 +208,14 @@ export default function OnboardingMetametrics() {
       </Typography>
 
       <div className="onboarding-metametrics__buttons">
-        <Button
-          data-testid="metametrics-i-agree"
-          type="primary"
-          large
-          onClick={onConfirm}
-        >
-          {t('onboardingMetametricsAgree')}
-        </Button>
+        {/*<Button*/}
+        {/*  data-testid="metametrics-i-agree"*/}
+        {/*  type="primary"*/}
+        {/*  large*/}
+        {/*  onClick={onConfirm}*/}
+        {/*>*/}
+        {/*  {t('onboardingMetametricsAgree')}*/}
+        {/*</Button>*/}
         <Button
           data-testid="metametrics-no-thanks"
           type="secondary"
