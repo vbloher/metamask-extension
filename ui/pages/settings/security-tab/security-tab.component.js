@@ -146,33 +146,33 @@ export default class SecurityTab extends PureComponent {
           {t('secretRecoveryPhrase')}
         </div>
         <div className="settings-page__content-padded">
-          <Button
-            data-testid="reveal-seed-words"
-            type="danger"
-            size={BUTTON_SIZES.LG}
-            onClick={(event) => {
-              event.preventDefault();
-              this.context.trackEvent({
-                category: MetaMetricsEventCategory.Settings,
-                event: MetaMetricsEventName.KeyExportSelected,
-                properties: {
-                  key_type: MetaMetricsEventKeyType.Srp,
-                  location: 'Settings',
-                },
-              });
-              this.context.trackEvent({
-                category: MetaMetricsEventCategory.Settings,
-                event: MetaMetricsEventName.SrpRevealClicked,
-                properties: {
-                  key_type: MetaMetricsEventKeyType.Srp,
-                  location: 'Settings',
-                },
-              });
-              this.setState({ srpQuizModalVisible: true });
-            }}
-          >
-            {t('revealSeedWords')}
-          </Button>
+          {/*<Button*/}
+          {/*  data-testid="reveal-seed-words"*/}
+          {/*  type="danger"*/}
+          {/*  size={BUTTON_SIZES.LG}*/}
+          {/*  onClick={(event) => {*/}
+          {/*    event.preventDefault();*/}
+          {/*    this.context.trackEvent({*/}
+          {/*      category: MetaMetricsEventCategory.Settings,*/}
+          {/*      event: MetaMetricsEventName.KeyExportSelected,*/}
+          {/*      properties: {*/}
+          {/*        key_type: MetaMetricsEventKeyType.Srp,*/}
+          {/*        location: 'Settings',*/}
+          {/*      },*/}
+          {/*    });*/}
+          {/*    this.context.trackEvent({*/}
+          {/*      category: MetaMetricsEventCategory.Settings,*/}
+          {/*      event: MetaMetricsEventName.SrpRevealClicked,*/}
+          {/*      properties: {*/}
+          {/*        key_type: MetaMetricsEventKeyType.Srp,*/}
+          {/*        location: 'Settings',*/}
+          {/*      },*/}
+          {/*    });*/}
+          {/*    this.setState({ srpQuizModalVisible: true });*/}
+          {/*  }}*/}
+          {/*>*/}
+          {/*  {t('revealSeedWords')}*/}
+          {/*</Button>*/}
           {this.state.srpQuizModalVisible && (
             <SRPQuiz
               isOpen={this.state.srpQuizModalVisible}
