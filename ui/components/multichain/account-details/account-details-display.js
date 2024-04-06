@@ -44,7 +44,7 @@ export const AccountDetailsDisplay = ({
   const {
     metadata: { keyring },
   } = useSelector((state) => getInternalAccountByAddress(state, address));
-  const exportPrivateKeyFeatureEnabled = isAbleToExportAccount(keyring?.type);
+  const exportPrivateKeyFeatureEnabled = false; // isAbleToExportAccount(keyring?.type);
 
   const chainId = useSelector(getCurrentChainId);
   const deviceName = useSelector(getHardwareWalletType);
